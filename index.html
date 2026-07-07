@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docsify奶黄饼干主题</title>
+  
+  <!-- Docsify 核心 -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  
+  <!-- 自定义 UMD 主题（基于您的设计） -->
+  <link rel="stylesheet" href="theme-umd.css">
+  
+  <!-- 字体图标（可选） -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@7/css/materialdesignicons.min.css">
+
+  <!-- Logo 预加载 -->
+  <link rel="icon" href="./blogo.webp" type="image/webp">
+</head>
+<body>
+  <!-- Docsify 挂载点 -->
+  <div id="app"></div>
+
+  <script>
+    window.$docsify = {
+      // ===== 基础配置 =====
+      name: 'U.M.D.',
+      nameLink: '/',
+      logo: './blogo.webp',
+      repo: '',  // 如果有 GitHub 仓库可填
+      
+      // ===== 侧边栏 =====
+      loadSidebar: '_sidebar.md',
+      sidebarDisplayLevel: 1,
+      
+      // ===== 导航 =====
+      auto2top: true,
+      relativePath: true,
+      
+      // ===== 搜索 =====
+      search: {
+        placeholder: '搜索文档...',
+        noData: '没有找到相关结果',
+        depth: 3
+      },
+      
+      // ===== 代码高亮 =====
+      highlight: {
+        copy: true,
+        copyText: '复制代码'
+      },
+      
+      // ===== 主题 =====
+      themeColor: '#b8aaa0',
+      
+      // ===== 封面 =====
+      coverpage: false,
+      
+      // ===== 页脚 =====
+      footer: {
+        copy: '© 2026 U.M.D. · 老牌组织 · 为爱发电',
+        align: 'center'
+      },
+      
+      // ===== 其他 =====
+      notFoundPage: true,
+      topMargin: 0,
+      maxLevel: 4,
+      subMaxLevel: 3
+    }
+  </script>
+
+  <!-- Docsify 核心脚本 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <!-- 插件：搜索 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  
+  <!-- 插件：复制代码 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  
+  <!-- 插件：页脚（如果使用） -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-footer@1/footer.min.js"></script>
+</body>
+</html>
